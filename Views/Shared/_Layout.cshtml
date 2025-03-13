@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav>
+        <div class="bg-black text-white p-3 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center ms-3">
+                <p class="mb-0">Man-Thu: <b>9:00 AM - 5:30 PM</b></p>
+                <img src="~/Content/Images/down_arrow.png" alt="Alternate Text" class="ms-2" />
+            </div>
+            <p class="mb-0 text-center flex-grow-1 " style="margin-left:11%">
+                Visit out showroom in 1234 Street Address City, 1234
+                <a href="#" class="text-white"><b>Contact Us</b></a>
+            </p>
+            <p class="mb-0 text-end flex-grow-1">
+                Call Us: (00) 1234 5678
+
+            </p>
+            <div class="d-flex align-items-center ms-3">
+                <a href="#" style="padding-right:8px"><img src="~/Content/Images/facebook_icons.png" class="" alt="facebook_icons" /></a>
+                <a href="#"><img src="~/Content/Images/instagram_icons.png" alt="instagram_icons" /></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-white border-5 shadow-lg text-dark">
+            <div class="container ms-3">
+
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand ">
+                    <img src="~/Content/Images/Logo.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        title="Toggle navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav text-start">
+                        <li class="fw-bold">@Html.ActionLink("Laptops", "Laptops", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Desktop PCs", "DesktopPCs", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Networking Devices", "NetworkingDevices", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Printers & Scanners", "PrintersScanners", "Products", new { area = "" }, new { @class = "nav-link" })</liclass="fw-bold">
+                        <li class="fw-bold">@Html.ActionLink("PC Parts", "PCParts", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("All Other Products", "AllProducts", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Repairs", "Repairs", "Services", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Our Deals", "Deals", "Home", new { area = "" }, new { @class = "btn btn-outline-primary" })</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end align-content-end text-end ms-0">
+                <a href="#" class="me-3">
+                    <img src="~/Content/Images/search.png" alt="Search" />
+                </a>
+                <a href="#" class="me-3">
+                    <img src="~/Content/Images/shopping-cart.png" alt="Shopping Cart" />
+                </a>
+                <a href="#" class="me-3">
+                    <img src="~/Content/Images/Avatar.png" alt="Shopping Cart" />
+                </a>
+            </div>
+        </nav>
+
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer class="bg-warning w-100">
+        <div class="d-flex flex-column" style="height: 40vh;">
+            <!-- Phần trên (40%) -->
+            <div class="bg-info-subtle text-center p-3 d-flex justify-content-center align-items-center" style="flex: 4;">
+                <div class="col-md-4">
+                    <img src="~/Content/Images/Support.png" alt="Support" />
+                    <h4>Product Support</h4>
+                    <p>Up to 3 years on-site warranty available for your peace of mind</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Content/Images/Account.png" alt="Account" />
+                    <h4>Persional Account</h4>
+                    <p>With big discounts, free delivery and a dedicated support specialist.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Content/Images/Saving.png" alt="Saving" />
+                    <h4>Amazing Saving</h4>
+                    <p>Up to 70% off new Products, you can be sure of the best price</p>
+                </div>
+            </div>
+            <!-- Phần dưới (60%) -->
+            <div class="bg-black text-white text-start">
+                <div class="d-flex justify-content-center align-items-center me-3">
+                    <div class="container-fluid ms-4 p-2 mt-5">
+                        <h4>Sign Up To Our Newsletter.</h4>
+                        <p>Be the first to hear about the latest offers.</p>
+                    </div>
+                        <input type="email" placeholder="Your Email" value="" class="ms-auto form-control w-auto me-3 bg-black vw-100" />
+                        <button class="btn-sm bg-primary px-4 py-2 rounded-pill">Subscribe</button>
+                   
+                </div>
+                <div class="container-fluid">
+                    <div class="row ms-2">
+                        <div class="col-lg-2 col-md-6 ms-0">
+                            <h5 class="opacity-50">Information</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">About Zip</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Search</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Terms</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Orders and Returns</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Advanced Search</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Newsletter Subscription</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ms-0">
+                            <h5 class="opacity-50">PC Parts</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class="text-decoration-none text-light">CPUS</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Add On Cards</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Hard Drives (Internal)</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Graphic Cards</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Keyboards / Mice</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Cases / Power Supplies / Cooling</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">RAM (Memory)</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Software</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Speakers / Headsets</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Motherboards</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 ms-0">
+                            <h5 class="opacity-50">Desktop PCs</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class="text-decoration-none text-light">Custom PCs</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Servers</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">MSI All-In-One PCs</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">HP/Compaq PCs</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">ASUS PCs</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Tecs PCs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 ms-0">
+                            <h5 class="opacity-50">Laptops</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class="text-decoration-none text-light">Evryday Use Notebooks</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">MSI Workstation Series</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">MSI Prestige Series</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Tablets and Pads</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Netbooks</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Infinity Gaming Notebooks</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ms-0">
+                            <h5 class="opacity-50">Address</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class="text-decoration-none text-light">Address: 1234 Street Adress City Address, 1234</a></li>
+                                <li>Phones:<a href="#"> (00) 1234 5678</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">We are open: Monday-Thursday: 9:00 AM - 5:30 PM</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Friday: 9:00 AM - 6:00 PM</a></li>
+                                <li><a href="#" class="text-decoration-none text-light">Saturday: 11:00 AM - 5:00 PM</a></li>
+                                <li>E-mail: <a href="#" >E-mail: shop@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

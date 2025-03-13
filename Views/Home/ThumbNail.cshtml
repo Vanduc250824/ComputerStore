@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null; // Không sử dụng Layout
+    ViewBag.Title = "Welcome!";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="bg-primary">
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Cột nội dung chính -->
+            <div class="col-7 d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="col-md-7 mx-auto p-3">
+                        <h1 class="text-white" style="font-size: 70px;">eCommerce Website Design Template</h1>
+                        <button class="btn btn-light btn-lg" style="font-size: 35px;" onclick="redirectToHome()">Click Here!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột bên phải màu đen -->
+            <div class="col-5 d-flex justify-content-end">
+                <img src="~/Content/Images/Phone_bg.jpg" alt="Back_ground" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script>
+        function redirectToHome() {
+            window.location.href = '@Url.Action("Index", "Home")';
+        }
+    </script>
+</body>
+</html>
