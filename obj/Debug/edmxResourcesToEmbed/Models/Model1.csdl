@@ -54,7 +54,7 @@
     <Property Name="Price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="StockQuantity" Type="Int32" Nullable="false" />
     <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
-    <Property Name="ImageData" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Category" Relationship="Self.FK__Products__Catego__31B762FC" FromRole="Products" ToRole="Categories" />
     <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__Produ__44CA3770" FromRole="Products" ToRole="OrderDetails" />
     <NavigationProperty Name="ProductPromotions" Relationship="Self.FK__ProductPr__Produ__3864608B" FromRole="Products" ToRole="ProductPromotions" />

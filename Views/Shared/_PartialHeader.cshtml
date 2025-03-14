@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+</head>
+<body>
+    <nav>
+        <div class="bg-black text-white p-3 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center ms-3">
+                <p class="mb-0">Man-Thu: <b>9:00 AM - 5:30 PM</b></p>
+                <img src="@Url.Content("~/Content/Images/down_arrow.png")" alt="Alternate Text" class="ms-2" />
+            </div>
+            <p class="mb-0 text-center flex-grow-1" style="margin-left:11%">
+                Visit our showroom in 1234 Street Address City, 1234
+                <a href="#" class="text-white"><b>Contact Us</b></a>
+            </p>
+            <p class="mb-0 text-end flex-grow-1">
+                Call Us: <a href="tel:+0012345678" class="text-white"><b>(00) 1234 5678</b></a>
+            </p>
+            <div class="d-flex align-items-center ms-3">
+                <a href="#" style="padding-right:8px"><img src="@Url.Content("~/Content/Images/facebook_icons.png")" alt="facebook_icons" /></a>
+                <a href="#"><img src="@Url.Content("~/Content/Images/instagram_icons.png")" alt="instagram_icons" /></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-white border-5 shadow-lg text-dark">
+            <div class="container ms-3">
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                    <img src="@Url.Content("~/Content/Images/Logo.png")" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        title="Toggle navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav text-start">
+                        <li class="fw-bold">@Html.ActionLink("Laptops", "Laptops", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Desktop PCs", "DesktopPCs", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Networking Devices", "NetworkingDevices", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Printers & Scanners", "PrintersScanners", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("PC Parts", "PCParts", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("All Other Products", "AllProducts", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Repairs", "Repairs", "Services", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="fw-bold">@Html.ActionLink("Our Deals", "Deals", "Home", new { area = "" }, new { @class = "btn btn-outline-primary" })</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end text-end ms-0">
+                <a href="#" class="me-3">
+                    <img src="@Url.Content("~/Content/Images/search.png")" alt="Search" />
+                </a>
+                <a href="#" class="me-3">
+                    <img src="@Url.Content("~/Content/Images/shopping-cart.png")" alt="Shopping Cart" />
+                </a>
+                <a href="#" class="me-3">
+                    <img src="@Url.Content("~/Content/Images/Avatar.png")" alt="User Avatar" />
+                </a>
+            </div>
+        </nav>
+    </nav>
+</body>
+</html>

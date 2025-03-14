@@ -50,7 +50,7 @@
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="StockQuantity" ColumnName="StockQuantity" />
           <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="ImageData" ColumnName="ImageData" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

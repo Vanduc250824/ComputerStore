@@ -28,16 +28,16 @@ namespace Computer_Store.Models
         [Display(Name = "Tên sản phẩm")]
         public string Name { get; set; }
         public Nullable<int> CategoryID { get; set; }
-        [Display(Name = "Giá tiền")]
-        public decimal Price { get; set; }
-        [Display(Name = "Số lượng tồn kho")]
-        public int StockQuantity { get; set; }
-        [Display(Name = "Mô tả sản phẩm")]
-        public string Description { get; set; }
-        [Display(Name = "Hình ảnh sản phẩm")]
-        public byte[] ImageData { get; set; }
 
-        [NotMapped] 
+        [Display(Name = "Giá")]
+        public decimal Price { get; set; }
+        [Display(Name = "số lượng tồn kho")]
+        public int StockQuantity { get; set; }
+        [Display(Name = "Mô tả")]
+        public string Description { get; set; }
+        [Display(Name ="Hình ảnh sản phẩm")]
+        public string ImageUrl { get; set; }
+        [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

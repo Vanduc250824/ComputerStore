@@ -207,6 +207,8 @@
     <Content Include="Content\Images\instagram_icons.png" />
     <Content Include="Content\Images\Logo.png" />
     <Content Include="Content\Images\Phone_bg.jpg" />
+    <Content Include="Content\Images\Products\Check.png" />
+    <Content Include="Content\Images\Products\Screenshot 2025-03-10 194435.png" />
     <Content Include="Content\Images\Saving.png" />
     <Content Include="Content\Images\search.png" />
     <Content Include="Content\Images\shopping-cart.png" />
@@ -268,9 +270,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
     <Content Include="Views\Products\Delete.cshtml" />
-    <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Shared\_PartialHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
