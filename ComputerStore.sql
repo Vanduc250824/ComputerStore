@@ -1,4 +1,4 @@
-﻿USE ComputerStore;
+USE ComputerStore;
 GO
 
 -- Bảng Users
@@ -82,4 +82,11 @@ BEGIN
     FROM Users
     INNER JOIN inserted i ON Users.UserID = i.UserID;
 END;
-Select * from Users
+Select * from Products
+ALTER TABLE Products DROP COLUMN ImageData;
+ALTER TABLE Products ADD ImageUrl NVARCHAR(255);
+SELECT ProductID, ImageUrl FROM Products
+UPDATE Products 
+SET ImageUrl = '/Content/Images/Products/Check.png' 
+WHERE Name = 'checkAdmin';
+SELECT * FROM Products WHERE Name = 'checkAdmin';
