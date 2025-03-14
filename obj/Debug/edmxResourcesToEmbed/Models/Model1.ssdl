@@ -46,7 +46,7 @@
     <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="StockQuantity" Type="int" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="1000" />
-    <Property Name="ImageData" Type="varbinary(max)" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="Promotions">
     <Key>

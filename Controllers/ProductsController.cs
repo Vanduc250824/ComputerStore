@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using Computer_Store.Models;
 
 namespace Computer_Store.Controllers
@@ -53,10 +55,12 @@ namespace Computer_Store.Controllers
         {
             if (product.ImageFile != null && product.ImageFile.ContentLength > 0)
             {
-                using (var binaryReader = new BinaryReader(product.ImageFile.InputStream))
-                {
-                    product.ImageData = binaryReader.ReadBytes(product.ImageFile.ContentLength);
-                }
+                string fileName = Path.GetFileName(product.ImageFile.FileName);
+                string path = Path.Combine(Server.MapPath("~/Content/Images/Products/"), fileName);
+                product.ImageFile.SaveAs(path);
+
+                // Lưu đường dẫn ảnh vào database
+                product.ImageUrl = "/Content/Images/Products/" + fileName;
             }
 
             if (ModelState.IsValid)
@@ -69,6 +73,9 @@ namespace Computer_Store.Controllers
             return View(product);
         }
 
+
+
+
         // GET: Products/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -76,11 +83,13 @@ namespace Computer_Store.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Product product = db.Products.Find(id);
             if (product == null)
             {
                 return HttpNotFound();
             }
+
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Name", product.CategoryID);
             return View(product);
         }
@@ -90,17 +99,32 @@ namespace Computer_Store.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ProductID,Name,CategoryID,Price,StockQuantity,ImageUrl,Description")] Product product)
+        public ActionResult Edit(Product product)
         {
-            if (ModelState.IsValid)
+            var existingProduct = db.Products.Find(product.ProductID);
+            if (existingProduct == null) return HttpNotFound();
+
+            if (product.ImageFile != null && product.ImageFile.ContentLength > 0)
             {
-                db.Entry(product).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                string fileName = Path.GetFileName(product.ImageFile.FileName);
+                string path = Path.Combine(Server.MapPath("~/Content/Images/Products/"), fileName);
+                product.ImageFile.SaveAs(path);
+
+                // Cập nhật đường dẫn ảnh mới
+                existingProduct.ImageUrl = "~/Content/Images/Products/" + fileName;
             }
-            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Name", product.CategoryID);
-            return View(product);
+
+            // Cập nhật thông tin khác
+            existingProduct.Name = product.Name;
+            existingProduct.Price = product.Price;
+            existingProduct.StockQuantity = product.StockQuantity;
+            existingProduct.Description = product.Description;
+
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
+
+
 
         // GET: Products/Delete/5
         public ActionResult Delete(int? id)

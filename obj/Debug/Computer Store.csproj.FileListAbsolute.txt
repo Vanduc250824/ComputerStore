@@ -152,3 +152,78 @@ D:\Coders\HTML\Lập trình Web\Computer Store\obj\Debug\Computer Store.csproj.C
 D:\Coders\HTML\Lập trình Web\Computer Store\obj\Debug\Computer.17715F4F.Up2Date
 D:\Coders\HTML\Lập trình Web\Computer Store\obj\Debug\Computer Store.dll
 D:\Coders\HTML\Lập trình Web\Computer Store\obj\Debug\Computer Store.pdb
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Computer Store.dll.config
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Computer Store.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Computer Store.pdb
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csc.exe
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csc.exe.config
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csc.rsp
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csi.exe
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csi.exe.config
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\csi.rsp
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Buffers.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Collections.Immutable.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Memory.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Numerics.Vectors.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\vbc.exe
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\vbc.exe.config
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\vbc.rsp
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\VBCSCompiler.exe
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\roslyn\VBCSCompiler.exe.config
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Antlr3.Runtime.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\BCrypt.Net-Next.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\EntityFramework.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\EntityFramework.SqlServer.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Microsoft.Web.Infrastructure.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Newtonsoft.Json.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Buffers.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Memory.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Numerics.Vectors.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Helpers.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Mvc.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Optimization.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Razor.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.Deployment.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.Razor.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\WebGrease.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\BCrypt.Net-Next.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\EntityFramework.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\EntityFramework.SqlServer.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Buffers.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Memory.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Numerics.Vectors.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Helpers.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Mvc.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Razor.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.Deployment.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.WebPages.Razor.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\System.Web.Optimization.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Newtonsoft.Json.xml
+D:\Coders\HTML\Lập trình Web\ComputerStore1\bin\Antlr3.Runtime.pdb
+D:\Coders\HTML\Lập trình Web\ComputerStore1\obj\Debug\Computer Store.csproj.AssemblyReference.cache
+D:\Coders\HTML\Lập trình Web\ComputerStore1\obj\Debug\Computer Store.csproj.CoreCompileInputs.cache
+D:\Coders\HTML\Lập trình Web\ComputerStore1\obj\Debug\Computer.17715F4F.Up2Date
+D:\Coders\HTML\Lập trình Web\ComputerStore1\obj\Debug\Computer Store.dll
+D:\Coders\HTML\Lập trình Web\ComputerStore1\obj\Debug\Computer Store.pdb
